@@ -208,12 +208,15 @@
 }
 
 .main-image {
-    position: fixed;
-    top: 60px;
-    left: 50%; 
-    transform: translateX(-50%);
-    max-width: 920px;
+  position: fixed;
+  top: 60px;           /* 위에서 60px 떨어지게 변경 */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 920px;
+  width: 100%;
+  img {
     width: 100%;
+  }
 }
 
 .main-icons {
