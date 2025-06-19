@@ -24,7 +24,7 @@ function Main() {
     try {
       await navigator.clipboard.writeText('wannak_d1210@naver.com');
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // 2초 후 메시지 사라짐
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('이메일 복사 실패:', err);
     }
@@ -50,7 +50,6 @@ function Main() {
     };
   }, []);
 
-  
   const education = [
     {
       name: '그린컴퓨터학원',
@@ -82,6 +81,7 @@ function Main() {
       description: '풀무원을 리뉴얼한 프로젝트 입니다.',
       thumbnail: '/Img/sumnail1.svg',
       githubUrl: 'https://github.com/subin75/Pulmuone',
+      tags: ["HTML, SCSS", "팀","웹","반응형"]
     },
     {
       id: 2,
@@ -89,6 +89,7 @@ function Main() {
       description: '제주 여행을 계획하고 다양한 장소를 탐색할 수 있는 웹사이트, "떠나봅서" 입니다.',
       thumbnail: '/Img/sumnail2.svg',
       githubUrl: 'https://github.com/subin75/Jeju',
+      tags: ["REACT, SCSS", "팀","웹","반응형"]
     },
     {
       id: 3,
@@ -96,6 +97,7 @@ function Main() {
       description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
       thumbnail: '/Img/sumnail3.svg',
       githubUrl: 'https://github.com/subin75/Marketon',
+      tags: ["REACT,PHP", "솔로","웹","반응형"]
     },
     {
       id: 4,
@@ -103,6 +105,7 @@ function Main() {
       description: '공부시간을 측정하고 공유하는 앱, "StudyLog" 입니다. ',
       thumbnail: '/Img/sumnail4.svg',
       githubUrl: 'https://github.com/subin75/StudyLog',
+      tags: ["Kotlin, Firebase", "팀","앱"]
     },
     {
       id: 5,
@@ -110,6 +113,7 @@ function Main() {
       description: '병원의 맞춤형 정보를 제공하기 위한 앱, "모두의 닥터(MD)" 입니다. ',
       thumbnail: '/Img/sumnail5.svg',
       githubUrl: 'https://github.com/subin75/University',
+      tags: ["Kotlin, Firebase", "팀","앱"]
     },
   ];
 
@@ -170,8 +174,6 @@ function Main() {
         <div className="main-image">
           <img src="/Img/mainimg.svg" />
         </div>
-
-        
 
         <div className="down-icon">
           <a href="#aboutme">
@@ -308,7 +310,7 @@ function Main() {
                   <img className="skill-icon" src="/Img/React.svg" />
                   <div className="skill-text-group">
                     <h3>React</h3>
-                    <p>리액트로 여러 프로젝트를 해봤으며, ContextAPI, useState, useEffect를 활용할 수 있습니다.</p>
+                    <p>리액트로 여러 프로젝트를 해봤으며, ContextAPI, useState, useEffect를 <br/>활용할 수 있습니다.</p>
                   </div>
                 </div>
 
@@ -445,12 +447,18 @@ function Main() {
               if (activeTab === '개인') return project.title === 'Marketon';
               return true;
             })
-            .map(({ id, title, description, thumbnail, githubUrl }) => (
+            .map(({ id, title, description, thumbnail, githubUrl, tags }) => (
               <div key={id} className="project-card">
                 <img src={thumbnail} alt={`${title} thumbnail`} />
                 <div className="project-info">
                   <h3>{title}</h3>
                   <p>{description}</p>
+
+                  <div className="tag-buttons">
+                    {tags && tags.map((tag, idx) => (
+                      <span key={idx} className="tag">{tag}</span>
+                      ))}
+                  </div>
                 </div>
                 <div className="project-hover">
                   <p className="view-detail" onClick={() => setShowDetail(id)}>자세히 보기</p>
