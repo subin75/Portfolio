@@ -13,16 +13,13 @@
 }
 
 .main-title {
-  position: fixed; /* 화면 기준 위치 고정 */
-  top: 50%;        /* 세로 중앙 */
-  left: 50%;       /* 가로 중앙 */
-  transform: translate(-50%, -50%) scale(1.2); /* 정확한 중앙 보정 + 기존 애니메이션 효과 유지 */
+  margin-top: 20vh;
   font-size: 50px;
+  margin-bottom: 30px;
   font-family: 'NanumSquareRound';
   animation: title 2s forwards;
+  transform: scale(1.2) translateY(220%);
   opacity: 0;
-  margin-top: 0;       /* 중앙 정렬에는 margin-top 필요 없음 */
-  margin-bottom: 30px; /* 아래 여백은 유지 가능 */
 
   @keyframes title {
     60%{
