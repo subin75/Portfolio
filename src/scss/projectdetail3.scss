@@ -1,0 +1,18 @@
+.project-title-banner3 {
+    background-color: #EE8532;
+    color: white;
+    font-family: 'NanumSquareRoundB';
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    .date {
+      margin-top: 15px;
+      font-family: 'NanumSquareRound';
+      font-size: 14px;
+    }
+  }
+
+  @import "./res-main";

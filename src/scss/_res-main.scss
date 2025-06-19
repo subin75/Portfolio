@@ -1,0 +1,116 @@
+// ========================================아이패드========================================
+@media (max-width: 768px){
+.side-icons{
+    right: 3%;
+}
+.main-title {
+    font-size: 45px;
+}
+.about-main {
+    font-size: 45px;
+}
+.project-container .project-title {
+    font-size: 45px;
+}
+.interview-container .interview-title {
+    font-size: 45px;
+}
+.thank-you-section .thank-you-content h2{
+    font-size: 85px;
+}
+.thank-you-section .thank-you-content p{
+    font-size: 25px;
+}
+.project-title-banner1 .date {
+    font-size: 18px;
+}
+.aboutme-content{
+    gap: 0px;
+}
+}
+  // ========================================모바일========================================
+
+@media (max-width:480px){
+.side-icons{
+    right: 0%;
+}
+.main-title {
+    font-size: 40px;
+}
+.main-subtitle{
+    font-size: 18px;
+}
+.aboutme-content{
+    gap: 0px;
+}
+.main-icons{
+    right: 2%;
+}
+.about-main {
+    font-size: 40px;
+}
+.project-container .project-title {
+    font-size: 40px;
+}
+.interview-container .interview-title {
+    font-size: 40px;
+}
+.thank-you-section .thank-you-content h2{
+    font-size: 80px;
+}
+.thank-you-section .thank-you-content p{
+        font-size: 20px;
+}
+.project-title-banner .date {
+    font-size: 13px;
+}
+.project-title-banner1 .date {
+    font-size: 13px;
+}
+.project-title-banner2 .date {
+    font-size: 13px;
+}
+.project-title-banner3 .date {
+    font-size: 13px;
+}
+.project-title-banner4 .date {
+    font-size: 13px;
+}
+.skill-container .skill-nav ul{
+    display: flex;
+    flex-direction: row;   
+}
+
+.skill-container .skill-content {
+    display: block; 
+    gap: 0;
+    margin-top: 10px;
+}
+.skill-container .skill-details {
+    margin-top: 20px;
+}
+.skill-container .skill-nav ul li.active {
+    border-left: none;
+}
+.project-title-banner{
+    font-size: 28px;
+}
+.project-title-banner1{
+    font-size: 28px;
+}
+.project-title-banner2{
+    font-size: 28px;
+}
+.project-title-banner3{
+    font-size: 28px;
+}
+.project-title-banner4{
+    font-size: 28px;
+}
+.interview-container .interview-block p {
+    font-size: 15px;
+}
+.personal-info p{
+    font-size: 16px;
+}
+}
