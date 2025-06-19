@@ -349,7 +349,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/PHP.svg" />
+                  <img className="skill-icon" src="/Img/Php.svg" />
                   <div className="skill-text-group">
                     <h3>PHP</h3>
                     <p>프로젝트에서 PHP를 활용해 비동기 통신과 조건문/배열 메서드를 이용한 데이터 처리 경험이 있습니다.</p>
@@ -373,7 +373,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/MongoDB.svg" />
+                  <img className="skill-icon" src="/Img/Mongodb.svg" />
                   <div className="skill-text-group">
                     <h3>MongoDB</h3>
                     <p>최근 프로젝트를 만들 때 사용해보았습니다.</p>
