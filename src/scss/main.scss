@@ -208,13 +208,12 @@
 }
 
 .main-image {
-  max-width: 920px;
-  width: 100%;
-  margin-top: auto;
-  margin-top: 30px;
-  img {
+    position: fixed;
+    top: 60px;
+    left: 50%; 
+    transform: translateX(-50%);
+    max-width: 920px;
     width: 100%;
-  }
 }
 
 .main-icons {
