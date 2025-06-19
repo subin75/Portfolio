@@ -70,15 +70,19 @@
 }
 
 .main-update {
-  margin-top: 45px;
-  animation: mainImg 1s 1.7s forwards;
-  opacity: 0;
-  color: #888;
-  margin-left: 20px;
-  align-self: flex-start;
-  margin-bottom: auto;
-  font-size: 15px;
-  font-family: 'NanumSquareRound';
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    align-self: flex-start;
+    animation: mainImg 1s 1.7s forwards;
+    color: #888;
+    font-family: NanumSquareRound;
+    font-size: 15px;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-top: 45px;
+    opacity: 0;
 }
 .main-title.centered {
   position: fixed;
