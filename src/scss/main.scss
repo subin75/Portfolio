@@ -13,13 +13,16 @@
 }
 
 .main-title {
-  margin-top: 130px;
+  animation: title 2s forwards;
+  font-family: NanumSquareRound;
   font-size: 50px;
   margin-bottom: 30px;
-  font-family: 'NanumSquareRound';
-  animation: title 2s forwards;
-  transform: scale(1.2) translateY(220%);
   opacity: 0;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+}
 
   @keyframes title {
     60%{
@@ -489,7 +492,6 @@
   color: #fff;
   position: relative;
   width: 100%;
-  height: 100vh;
 
   .project-title {
     font-size: 50px;
