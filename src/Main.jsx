@@ -81,7 +81,7 @@ function Main() {
       description: '풀무원을 리뉴얼한 프로젝트 입니다.',
       thumbnail: '/Img/sumnail1.svg',
       githubUrl: 'https://github.com/subin75/Pulmuone',
-      tags: ["Html, Scss", "팀","웹","반응형"]
+      tags: ["HTML, SCSS", "팀","웹","반응형"]
     },
     {
       id: 2,
@@ -89,7 +89,7 @@ function Main() {
       description: '제주 여행을 계획하고 다양한 장소를 탐색할 수 있는 웹사이트, "떠나봅서" 입니다.',
       thumbnail: '/Img/sumnail2.svg',
       githubUrl: 'https://github.com/subin75/Jeju',
-      tags: ["React, Scss", "팀","웹","반응형"]
+      tags: ["REACT, SCSS", "팀","웹","반응형"]
     },
     {
       id: 3,
@@ -97,7 +97,7 @@ function Main() {
       description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
       thumbnail: '/Img/sumnail3.svg',
       githubUrl: 'https://github.com/subin75/Marketon',
-      tags: ["React,Php", "솔로","웹","반응형"]
+      tags: ["REACT,PHP", "솔로","웹","반응형"]
     },
     {
       id: 4,
@@ -105,7 +105,7 @@ function Main() {
       description: '공부시간을 측정하고 공유하는 앱, "StudyLog" 입니다. ',
       thumbnail: '/Img/sumnail4.svg',
       githubUrl: 'https://github.com/subin75/StudyLog',
-      tags: ["Kotlin, Firebase", "팀","앱"]
+      tags: ["KOTLIN, FIREBASE", "팀","앱"]
     },
     {
       id: 5,
@@ -113,7 +113,7 @@ function Main() {
       description: '병원의 맞춤형 정보를 제공하기 위한 앱, "모두의 닥터(MD)" 입니다. ',
       thumbnail: '/Img/sumnail5.svg',
       githubUrl: 'https://github.com/subin75/University',
-      tags: ["Kotlin, Firebase", "팀","앱"]
+      tags: ["KOTLIN, FIREBASE", "팀","앱"]
     },
   ];
 
