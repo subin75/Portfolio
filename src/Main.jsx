@@ -415,7 +415,6 @@ function Main() {
 
       <section className="project-container">
         <h2 className="project-title">Project</h2>
-        <div class="project-tabs-wrapper">
         <div className="project-tabs">
           <span
             className={`tab ${activeTab === 'All' ? 'active' : ''}`}
@@ -436,7 +435,7 @@ function Main() {
             개인
           </span>
         </div>
-      </div>
+
         <div className="project-list">
           {projects
             .filter((project) => {
