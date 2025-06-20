@@ -513,7 +513,7 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 190px;
+  margin-top: 140px;
   max-width: calc((300px * 4) + (2rem * 3));
   margin-left: auto;
   margin-right: auto; 
@@ -708,6 +708,24 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.project-tabs-wrapper {
+  display: flex;
+  justify-content: flex-end; // 오른쪽 정렬
+  margin-bottom: 40px;
+}
+
+.project-tabs {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-family: 'NanumSquareRoundB';
+  color: white;
+  background: #2a2a2a;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 275px;
 }
 
 @import "./res-main";
