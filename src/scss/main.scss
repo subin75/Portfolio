@@ -450,164 +450,164 @@
   color: #fff;
   position: relative;
   width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+
   .project-title {
     font-size: 60px;
     margin-bottom: 60px;
     font-family: 'Noto Sans KR';
     font-weight: 900;
+    flex-shrink: 0; // 타이틀 크기 줄어들지 않게
+    white-space: nowrap;
   }
-  .project-tabs {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-family: 'NanumSquareRoundB';
-  color: white;
-  background: #2a2a2a;
-  padding: 10px 20px;
-  border-radius: 999px;
-  width: 275px;
-  .tab {
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 999px;
-    transition: background 0.3s, color 0.3s;
-    &.active {
-      background: #e0e0e0;
-      color: black;
-    }
-  }
-}
-.project-nav {
-  ul {
+
+  .project-content {
     display: flex;
+    flex-direction: column; // 좌우 정렬
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .project-tabs {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     font-size: 20px;
-    li {
-      position: relative;
+    font-family: 'NanumSquareRoundB';
+    color: white;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 16px;
+    min-width: 100px;
+    height: fit-content;
+    margin-top: 20px;
+    width: fit-content;
+
+    .tab {
       cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .nav-line {
-        width: 30px;
-        height: 2px;
-        background-color: #fff;
-        margin-top: 0.3rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
+      padding: 10px 20px;
+      border-radius: 999px;
+      transition: background 0.3s, color 0.3s;
+
       &.active {
-        font-weight: bold;
-        .nav-line {
-          opacity: 1;
-        }
+        background: #e0e0e0;
+        color: black;
       }
-    }
-  }
-}
-.project-list {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  max-width: calc((300px * 4) + (2rem * 3));
-  margin-left: auto;
-  margin-right: auto; 
-  .project-card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    border-radius: 15px;
-    border: 0.2px solid rgba(255, 255, 255, 0.1); 
-    overflow: hidden;
-    cursor: pointer;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-    .project-info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 16px;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-      color: white;
-      border-bottom-left-radius: 16px;
-      border-bottom-right-radius: 16px;
-      h3 {
-        margin: 0;
-        font-size: 25px;
-        font-family: 'NanumSquareRoundEB';
-      }
-      p {
-        margin: 10px 0 10px;
-        line-height: 1.8;
-        font-size: 14px;
-        font-family: 'NanumSquareRound';
-      }
-    }
-    .project-hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(25, 25, 25, 0.85);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease;
-      .view-detail,
-      .go-github {
-        font-size: 16px;
-        margin: 8px 0;
-        font-weight: 500;
-        line-height: 1.5;
-        white-space: nowrap;
-      }
-      .cursor-animation {
-        margin-top: 10px;
-        width: 36px;
-        height: 36px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        animation: clickAnimation 1.2s infinite ease-in-out;
-      }
-    }
-    &:hover .project-hover {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    &:hover {
-      transform: scale(1.02);
-      transition: transform 0.3s ease;
     }
   }
 
-  @keyframes clickAnimation {
-    0% {
-      transform: scale(1) translateY(0);
-      opacity: 1;
+  .project-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    max-width: calc((300px * 3) + (2rem * 2));
+
+    .project-card {
+      position: relative;
+      width: 300px;
+      height: 350px;
+      border-radius: 15px;
+      border: 0.2px solid rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .project-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        color: white;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+        h3 {
+          margin: 0;
+          font-size: 25px;
+          font-family: 'NanumSquareRoundEB';
+        }
+
+        p {
+          margin: 10px 0 10px;
+          line-height: 1.8;
+          font-size: 14px;
+          font-family: 'NanumSquareRound';
+        }
+      }
+
+      .project-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 25, 25, 0.85);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+
+        .view-detail,
+        .go-github {
+          font-size: 16px;
+          margin: 8px 0;
+          font-weight: 500;
+          line-height: 1.5;
+          white-space: nowrap;
+        }
+
+        .cursor-animation {
+          margin-top: 10px;
+          width: 36px;
+          height: 36px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          animation: clickAnimation 1.2s infinite ease-in-out;
+        }
+      }
+
+      &:hover .project-hover {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+      }
     }
-    50% {
-      transform: scale(0.95) translateY(-4px);
-      opacity: 0.8;
-    }
-    100% {
-      transform: scale(1) translateY(0);
-      opacity: 1;
+
+    @keyframes clickAnimation {
+      0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(0.95) translateY(-4px);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
     }
   }
-}
 }
 .popup-overlay {
   position: fixed;
