@@ -43,9 +43,10 @@
 .aboutme-content{
     gap: 0px;
 }
-.main-icons{
-    right: 2%;
+.aboutme-container {
+    padding: 40px;
 }
+
 .about-main {
     font-size: 40px;
 }
@@ -60,6 +61,9 @@
 }
 .thank-you-section .thank-you-content p{
         font-size: 20px;
+}
+.project-container {
+    padding: 20px 20px;
 }
 .project-title-banner .date {
     font-size: 13px;

@@ -29,8 +29,8 @@ function Main() {
       console.error('이메일 복사 실패:', err);
     }
     };
-
-  useEffect(() => {
+    
+    useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.intersectionRatio >= 0.9) {
@@ -97,7 +97,7 @@ function Main() {
       description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
       thumbnail: '/Img/sumnail3.svg',
       githubUrl: 'https://github.com/subin75/Marketon',
-      tags: ["REACT,PHP", "솔로","웹","반응형"]
+      tags: ["REACT,PHP", "개인","웹","반응형"]
     },
     {
       id: 4,
@@ -128,7 +128,7 @@ function Main() {
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
-
+  
   return (
     <div className={"intro-wrapper"}>
       <div className="main-icons">
@@ -162,14 +162,15 @@ function Main() {
             <Arrow />
           </div>
         </div>
-      <section className="main-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Img/background2.svg)` }}>
+        
+        <section className="main-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Img/background2.svg)` }}>
         <h1 className={"main-title"}>
           프론트엔드 개발자 <span className="highlight">황수빈</span> 입니다
         </h1>
-          <p className="main-subtitle">
-            사용자의 의견을 중요하게 여기며,<br />
-            포기하지 않고 끝까지 최선을 다하는 <b>책임감</b> 있는 개발자입니다.
-          </p>
+        <p className="main-subtitle">
+          사용자의 의견을 중요하게 여기며,<br />
+          포기하지 않고 끝까지 최선을 다하는 <b>책임감</b> 있는 개발자입니다.
+        </p>
 
         <div className="main-image">
           <img src="/Img/mainimg.svg" />
@@ -186,7 +187,6 @@ function Main() {
 
       <section id="aboutme" className="aboutme-container">
         <h2 className="about-main">About me</h2>
-
         <div className="aboutme-content">
           <div className="info-group">
             <div className="personal-info">
@@ -216,7 +216,7 @@ function Main() {
                           <p className="period">{cert.issued}</p>
                         </div>
                       ))}
-                </div>
+                    </div>
 
                 <button className="arrow-btn" onClick={handleNext}>
                   <FaChevronRight />
@@ -230,47 +230,45 @@ function Main() {
           </div>
         </div>
       </section>
-
+      
       <section className="interview-container">
-  <h2 className="interview-title">Interview</h2>
-
-  <div className="interview-block">
-    <div className="qa-box">
-      <h3>Q. 프론트엔드 개발자가 되고 싶은 계기는 무엇인가요?</h3>
-      <p>
-        프론트엔드는 단순히 눈에 보이는 부분을 만드는 것을 넘어서, <span className="b2">사용자와 가장 가까운 접점을 책임지는 영역</span>이라고 생각합니다.<br />
-        그래서 더 많은 고민이 필요하지만, 그만큼 더 큰 보람을 느낍니다.<br />
-        ‘사용자가 더 편하게 사용할 수 있도록 만든 화면을 직접 눈으로 확인할 수 있다’는 점이 저를 이 분야로 이끈 가장 큰 이유입니다.
-      </p>
-    </div>
-  </div>
-
-  <div className="interview-block">
-    <div className="qa-box">
-      <h3>Q. 일에 있어 가장 중요하게 생각하는 것이 있다면?</h3>
-      <p>
-        저는 <span className="b2">협업과 책임감</span>을 가장 중요하게 생각합니다.<br />
-        개발은 혼자서 완성하는 작업이 아니라, 팀과 함께 만들어가는 과정이라고 생각합니다.<br />
-        그래서 저는 언제나 다른 팀원들과의 <span className="b2">원활한 소통을 중요</span>하게 여기고, 서로의 입장을 이해하며 협력하는 데 집중합니다.<br />
-        또한 다양한 사용자가 편리하게 서비스를 이용할 수 있도록 개발에 임하고 있습니다.
-      </p>
-    </div>
-  </div>
-
-  <div className="interview-block">
-    <div className="qa-box">
-      <h3>Q. 자기개발을 위해 어떤 것들을 해왔는지?</h3>
-      <p>
-        개발 역량을 높이기 위해 6개월간 학원에서 체계적인 수업을 듣고, 프로젝트를 진행하며 실무 감각을 키웠습니다.<br />
-        부족하다고 느낀 언어나 지식은 관련 서적을 참고해 <span className="b2">꾸준히 보완해 나가려고 노력</span>하고 있습니다.
-      </p>
-    </div>
-  </div>
-</section>
-
+        <h2 className="interview-title">Interview</h2>
+        <div className="interview-block">
+          <div className="qa-box">
+            <h3>Q. 프론트엔드 개발자가 되고 싶은 계기는 무엇인가요?</h3>
+            <p>
+              프론트엔드는 단순히 눈에 보이는 부분을 만드는 것을 넘어서, <span className="b2">사용자와 가장 가까운 접점을 책임지는 영역</span>이라고 생각합니다.<br />
+              그래서 더 많은 고민이 필요하지만, 그만큼 더 큰 보람을 느낍니다.<br />
+              ‘사용자가 더 편하게 사용할 수 있도록 만든 화면을 직접 눈으로 확인할 수 있다’는 점이 저를 이 분야로 이끈 가장 큰 이유입니다.
+            </p>
+          </div>
+        </div>
+        
+        <div className="interview-block">
+          <div className="qa-box">
+            <h3>Q. 일에 있어 가장 중요하게 생각하는 것이 있다면?</h3>
+            <p>
+              저는 <span className="b2">협업과 책임감</span>을 가장 중요하게 생각합니다.<br />
+              개발은 혼자서 완성하는 작업이 아니라, 팀과 함께 만들어가는 과정이라고 생각합니다.<br />
+              그래서 저는 언제나 다른 팀원들과의 <span className="b2">원활한 소통을 중요</span>하게 여기고, 서로의 입장을 이해하며 협력하는 데 집중합니다.<br />
+              또한 다양한 사용자가 편리하게 서비스를 이용할 수 있도록 개발에 임하고 있습니다.
+            </p>
+          </div>
+        </div>
+        
+        <div className="interview-block">
+          <div className="qa-box">
+            <h3>Q. 자기개발을 위해 어떤 것들을 해왔는지?</h3>
+            <p>
+              개발 역량을 높이기 위해 6개월간 학원에서 체계적인 수업을 듣고, 프로젝트를 진행하며 실무 감각을 키웠습니다.<br />
+              부족하다고 느낀 언어나 지식은 관련 서적을 참고해 <span className="b2">꾸준히 보완해 나가려고 노력</span>하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <section className="skill-container">
         <h2 className="skill-title">Skill</h2>
-
         <div className="skill-content">
           <nav className="skill-nav">
             <ul>
@@ -286,7 +284,7 @@ function Main() {
             </ul>
             <div className="nav-line"></div>
           </nav>
-
+          
           <div className="skill-details">
             {selectedTab === 'FrontEnd' && (
               <>
@@ -417,7 +415,6 @@ function Main() {
 
       <section className="project-container">
         <h2 className="project-title">Project</h2>
-
         <div className="project-tabs">
           <span
             className={`tab ${activeTab === 'All' ? 'active' : ''}`}
@@ -486,17 +483,18 @@ function Main() {
           </div>
         </div>
       )}
+      
       <section className="thank-you-section" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Img/background2.svg)` }}>
-  <div className={`thank-you-content ${visible ? 'visible' : ''}`}
-  ref={contentRef}>
-    <h2>Thank You</h2>
-    <p>지금까지 <strong>“황수빈”</strong> 이었습니다<br />봐주셔서 감사합니다!</p>
-    <a href="./황수빈_이력서.hwp" download className="download-button">
-      이력서 다운로드
-    </a>
+      <div className={`thank-you-content ${visible ? 'visible' : ''}`}
+      ref={contentRef}>
+        <h2>Thank You</h2>
+        <p>지금까지 <strong>“황수빈”</strong> 이었습니다<br />봐주셔서 감사합니다!</p>
+        <a href="./황수빈_이력서.hwp" download className="download-button">
+        이력서 다운로드
+        </a>
+      </div>
+    </section>
   </div>
-</section>
-</div>
   );
 }
 
