@@ -65,7 +65,7 @@ function Projectdetail1({ onClose }) {
           <br/>비짓제주, 기상청 오픈 API를 활용해 실시간 정보 제공 및 개인화된 여행 서비스 제공
           <br/>다양한 정보 및 관리 기능을 통해 여행자들의 편의성 향상</li>
           <li><strong>개발 환경</strong>
-          <br/>REACT, SCSS, FIREBASE</li>
+          <br/>REACT, SCSS, MongoDB</li>
         </ul>
       </section>
 

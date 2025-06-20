@@ -414,46 +414,47 @@ function Main() {
       </section>
 
       <section className="project-container">
-  <h2 className="project-title">Project</h2>
-
-  <div className="project-content">
-    <div className="project-tabs">
-      <span
-        className={`tab ${activeTab === 'All' ? 'active' : ''}`}
-        onClick={() => setActiveTab('All')}
-      >
-        All
-      </span>
-      <span
-        className={`tab ${activeTab === '팀' ? 'active' : ''}`}
-        onClick={() => setActiveTab('팀')}
-      >
-        팀
-      </span>
-      <span
-        className={`tab ${activeTab === '개인' ? 'active' : ''}`}
-        onClick={() => setActiveTab('개인')}
-      >
-        개인
-      </span>
-    </div>
-
-    <div className="project-list">
-      {projects
-        .filter((project) => {
-          if (activeTab === 'All') return true;
-          if (activeTab === '팀') return project.title !== 'Marketon';
-          if (activeTab === '개인') return project.title === 'Marketon';
-          return true;
-        })
-        .map(({ id, title, description, thumbnail, githubUrl, tags }) => (
-          <div key={id} className="project-card">
-            <img src={thumbnail} alt={`${title} thumbnail`} />
-            <div className="project-info">
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <div className="tag-buttons">
-                {tags && tags.map((tag, idx) => (
+        <h2 className="project-title">Project</h2>
+        <div className="project-content">
+          <div className="project-tabs">
+            <span
+            className={`tab ${activeTab === 'All' ? 'active' : ''}`}
+            onClick={() => setActiveTab('All')}
+            >
+            All
+            </span>
+            
+            <span
+            className={`tab ${activeTab === '팀' ? 'active' : ''}`}
+            onClick={() => setActiveTab('팀')}
+            >
+            팀
+            </span>
+            
+            <span
+            className={`tab ${activeTab === '개인' ? 'active' : ''}`}
+            onClick={() => setActiveTab('개인')}
+            >
+            개인
+            </span>
+          </div>
+          
+          <div className="project-list">
+            {projects
+            .filter((project) => {
+              if (activeTab === 'All') return true;
+              if (activeTab === '팀') return project.title !== 'Marketon';
+              if (activeTab === '개인') return project.title === 'Marketon';
+              return true;
+            })
+            .map(({ id, title, description, thumbnail, githubUrl, tags }) => (
+            <div key={id} className="project-card">
+              <img src={thumbnail} alt={`${title} thumbnail`} />
+              <div className="project-info">
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <div className="tag-buttons">
+                  {tags && tags.map((tag, idx) => (
                   <span key={idx} className="tag">{tag}</span>
                 ))}
               </div>

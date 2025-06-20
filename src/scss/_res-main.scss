@@ -9,6 +9,21 @@
 .about-main {
     font-size: 45px;
 }
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 20px;
+    padding-bottom: 100px;
+    gap: 0px;
+}
+.project-container .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
 .project-container .project-title {
     font-size: 45px;
 }
@@ -64,6 +79,8 @@
 }
 .project-container {
     padding: 20px 20px;
+    gap: 0px;
+    padding-bottom: 70px;
 }
 .project-title-banner .date {
     font-size: 13px;

@@ -112,7 +112,6 @@ function Projectdetail2({ onClose }) {
             <li>로그인 (sns) : 로그인 후 좋아요, 장바구니 기능 제공</li>
           </ul>
         </div>
-
       </section>
     </div>
   );
