@@ -76,12 +76,20 @@ function Main() {
 
   const projects = [
     {
-      id: 1,
-      title: '풀무원',
-      description: '풀무원을 리뉴얼한 프로젝트 입니다.',
-      thumbnail: '/Img/sumnail1.svg',
-      githubUrl: 'https://github.com/subin75/Pulmuone',
-      tags: ["HTML, SCSS", "팀","웹","반응형"]
+      id: 6,
+      title: '프트폴리오',
+      description: '황수빈의 포트폴리오 입니다. ',
+      thumbnail: '/Img/sumnail6.svg',
+      githubUrl: 'https://github.com/subin75/Portfolio',
+      tags: ["REACT", "개인","웹", "반응형"]
+    },
+    {
+      id: 3,
+      title: 'Marketon',
+      description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
+      thumbnail: '/Img/sumnail3.svg',
+      githubUrl: 'https://github.com/subin75/Marketon',
+      tags: ["REACT,PHP", "개인","웹","반응형"]
     },
     {
       id: 2,
@@ -92,12 +100,12 @@ function Main() {
       tags: ["REACT, SCSS", "팀","웹","반응형"]
     },
     {
-      id: 3,
-      title: 'Marketon',
-      description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
-      thumbnail: '/Img/sumnail3.svg',
-      githubUrl: 'https://github.com/subin75/Marketon',
-      tags: ["REACT,PHP", "개인","웹","반응형"]
+      id: 1,
+      title: '풀무원',
+      description: '풀무원을 리뉴얼한 프로젝트 입니다.',
+      thumbnail: '/Img/sumnail1.svg',
+      githubUrl: 'https://github.com/subin75/Pulmuone',
+      tags: ["HTML, SCSS", "팀","웹","반응형"]
     },
     {
       id: 4,
