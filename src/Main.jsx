@@ -71,7 +71,7 @@ function Main() {
       issued: '2023.06',
     },
     {
-      name: 'GTQ 1급',
+      name: 'SQLD',
       issued: '2022.03',
     },
   ];
