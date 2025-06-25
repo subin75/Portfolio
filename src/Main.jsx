@@ -54,7 +54,7 @@ function Main() {
 
   const education = [
     {
-      name: '그린컴퓨터학원',
+      name: '그린컴퓨터아카데미',
       period: '2025.12 - 2025.06',
       highlight: true,
     },
