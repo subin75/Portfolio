@@ -60,7 +60,7 @@ function Projectdetail4({ onClose }) {
           <br/>Open Api를 활용해 영화정보 제공
           </li>
           <li><strong>목표</strong>
-          <br/>영화, TV 정보제공
+          <br/>영화, TV 관련 정보 제공 등으로 사용자에게 편의성 제공
           </li>
           <li><strong>개발 환경</strong>
           <br/>REACT, CSS</li>
