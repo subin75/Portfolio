@@ -100,6 +100,14 @@ function Main() {
       tags: ["REACT, SCSS", "팀","웹","반응형"]
     },
     {
+      id: 7,
+      title: 'Movie',
+      description: 'Open Api를 활용한 프로젝트 입니다.',
+      thumbnail: '/Img/sumnail7.svg',
+      githubUrl: 'https://github.com/subin75/test-movie',
+      tags: ["REACT, CSS", "개인","웹"]
+    },
+    {
       id: 1,
       title: '풀무원',
       description: '풀무원을 리뉴얼한 프로젝트 입니다.',
