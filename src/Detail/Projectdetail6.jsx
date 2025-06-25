@@ -50,19 +50,14 @@ function Projectdetail4({ onClose }) {
 
       <h1 className="section-heading">📗 소개</h1>
       <p className="intro-text">
-        Open Api를 활용한 영화 관련 프로젝트 입니다.
+        Open Api를 활용한 영화정보 제공 프로젝트 입니다.
       </p>
 
       <section className="section">
         <h2 className="section-heading">📌 요약</h2>
         <ul className="list">
           <li><strong>주제</strong>
-          <br/>Movie 정보 제공
-          <br/>TV 정보 제공
-          <br/>Movie, TV 상세정보 제공
-          <br/>Similar Movies 제공
-          <br/>Similar TV Shows 제공
-          <br/>검색기능
+          <br/>Open Api를 활용해 영화정보 제공
           </li>
           <li><strong>목표</strong>
           <br/>영화, TV 정보제공

@@ -47,9 +47,7 @@ function Projectdetail4({ onClose }) {
         <h2 className="section-heading">📌 요약</h2>
         <ul className="list">
           <li><strong>주제</strong>
-          <br/>일정관리
-          <br/>카테고리별 분리
-          <br/>병원검색 기능 제공
+          <br/>병원의 맞춤형 정보를 제공
           </li>
           <li><strong>목표</strong>
           <br/>OpenApi를 활용하여 사용자 서비스 제공

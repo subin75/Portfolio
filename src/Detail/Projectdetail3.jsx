@@ -47,9 +47,7 @@ function Projectdetail3({ onClose }) {
         <h2 className="section-heading">📌 요약</h2>
         <ul className="list">
           <li><strong>주제</strong>
-          <br/>To-do List 기능 제공
-          <br/>스톱워치
-          <br/>게시물 기능 제공
+          <br/>공부시간을 측정하고 공유
           </li>
           <li><strong>목표</strong>
           <br/>스톱워치 와 To-do List 기능을 통해 사용자들의 편의성 향상</li>

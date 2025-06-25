@@ -58,8 +58,6 @@ function Projectdetail2({ onClose }) {
         <ul className="list">
           <li><strong>주제</strong>
           <br/>다양한 상품 정보 제공
-          <br/>카테고리별 분리
-          <br/>장바구니 기능 제공
           </li>
           <li><strong>목표</strong>
           <br/>php를 활용해 상품을 등록하고 카테고리별로 구분하여 사용자 서비스 제공

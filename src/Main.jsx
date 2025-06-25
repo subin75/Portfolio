@@ -104,7 +104,7 @@ function Main() {
     {
       id: 7,
       title: 'YFLIX',
-      description: 'Open Api를 활용한 영화 관련 프로젝트 입니다.',
+      description: 'Open Api를 활용한 영화정보 제공 프로젝트 입니다.',
       thumbnail: '/Img/sumnail7.svg',
       githubUrl: 'https://github.com/subin75/test-movie',
       tags: ["REACT, CSS", "개인","웹"]

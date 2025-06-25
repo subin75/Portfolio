@@ -47,10 +47,7 @@ function Projectdetail4({ onClose }) {
         <h2 className="section-heading">📌 요약</h2>
         <ul className="list">
           <li><strong>주제</strong>
-          <br/>Aboutme
-          <br/>Interview
-          <br/>Skill
-          <br/>Project
+          <br/>나를 소개하는 "포트폴리오"
           </li>
           <li><strong>목표</strong>
           <br/>나에 대한 정보 제공
