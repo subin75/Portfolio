@@ -9,6 +9,8 @@ import ProjectDetail1 from './Detail/Projectdetail1';
 import ProjectDetail2 from './Detail/Projectdetail2';
 import ProjectDetail3 from './Detail/Projectdetail3';
 import ProjectDetail4 from './Detail/Projectdetail4';
+import ProjectDetail5 from './Detail/Projectdetail5';
+import ProjectDetail6 from './Detail/Projectdetail6';
 import './scss/main.scss';
 
 function Main() {
@@ -101,8 +103,8 @@ function Main() {
     },
     {
       id: 7,
-      title: 'Movie',
-      description: 'Open Api를 활용한 프로젝트 입니다.',
+      title: 'YFLIX',
+      description: 'Open Api를 활용한 영화 관련 프로젝트 입니다.',
       thumbnail: '/Img/sumnail7.svg',
       githubUrl: 'https://github.com/subin75/test-movie',
       tags: ["REACT, CSS", "개인","웹"]
@@ -495,6 +497,8 @@ function Main() {
             {showDetail === 3 && <ProjectDetail2 onClose={() => setShowDetail(null)} />}
             {showDetail === 4 && <ProjectDetail3 onClose={() => setShowDetail(null)} />}
             {showDetail === 5 && <ProjectDetail4 onClose={() => setShowDetail(null)} />}
+            {showDetail === 6 && <ProjectDetail5 onClose={() => setShowDetail(null)} />}
+            {showDetail === 7 && <ProjectDetail6 onClose={() => setShowDetail(null)} />}
           </div>
         </div>
       )}

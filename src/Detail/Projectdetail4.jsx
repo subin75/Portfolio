@@ -35,7 +35,7 @@ function Projectdetail4({ onClose }) {
 
       <div className="project-title-banner4">
         모두의 닥터(MD) - 병원앱
-        <li className="date">2023.03 - 2023.6 &nbsp;&nbsp;|&nbsp;&nbsp;2인</li>
+        <li className="date">2023.03 - 2023.06 &nbsp;&nbsp;|&nbsp;&nbsp;2인</li>
       </div>
 
       <h1 className="section-heading">📗 소개</h1>
