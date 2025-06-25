@@ -33,7 +33,7 @@ function Projectdetail1({ onClose }) {
           <span>GitHub</span>
         </a>
         <a
-          href="https://jeju-trip-eosin.vercel.app/community"
+          href="https://jeju-trip-eosin.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="icon-with-label"
