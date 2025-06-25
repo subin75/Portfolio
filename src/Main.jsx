@@ -461,8 +461,8 @@ function Main() {
             {projects
             .filter((project) => {
               if (activeTab === 'All') return true;
-              if (activeTab === '팀') return project.title !== 'Marketon';
-              if (activeTab === '개인') return project.title === 'Marketon';
+              if (activeTab === '팀') return project.title !== 'Marketon', 'YFLIX', '프트폴리오';
+              if (activeTab === '개인') return project.title === 'Marketon', 'YFLIX', '프트폴리오' ;
               return true;
             })
             .map(({ id, title, description, thumbnail, githubUrl, tags }) => (
