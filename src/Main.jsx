@@ -512,7 +512,7 @@ function Main() {
       ref={contentRef}>
         <h2>Thank You</h2>
         <p>지금까지 <strong>“황수빈”</strong> 이었습니다<br />봐주셔서 감사합니다!</p>
-        <a href="./황수빈_이력서.hwp" download className="download-button">
+        <a href="./이력서.hwp" download className="download-button">
         이력서 다운로드
         </a>
       </div>
