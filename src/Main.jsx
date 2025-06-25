@@ -79,8 +79,8 @@ function Main() {
   const projects = [
     {
       id: 6,
-      title: '프트폴리오',
-      description: '황수빈의 포트폴리오 입니다. ',
+      title: '포트폴리오',
+      description: '나를 소개하는 포트폴리오 입니다. ',
       thumbnail: '/Img/sumnail6.svg',
       githubUrl: 'https://github.com/subin75/Portfolio',
       tags: ["REACT", "개인","웹", "반응형"]
@@ -461,8 +461,12 @@ function Main() {
             {projects
             .filter((project) => {
               if (activeTab === 'All') return true;
-              if (activeTab === '팀') return project.title !== 'Marketon', 'YFLIX', '프트폴리오';
-              if (activeTab === '개인') return project.title === 'Marketon', 'YFLIX', '프트폴리오' ;
+              if (activeTab === '팀') {
+                return !['Marketon', 'YFLIX', '포트폴리오'].includes(project.title);
+              }
+              if (activeTab === '개인') {
+                return ['Marketon', 'YFLIX', '포트폴리오'].includes(project.title);
+              }
               return true;
             })
             .map(({ id, title, description, thumbnail, githubUrl, tags }) => (
