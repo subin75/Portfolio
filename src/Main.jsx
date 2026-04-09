@@ -199,7 +199,7 @@ function Main() {
         </p>
 
         <div className="main-image">
-          <img src="/Img/mainimg.svg" alt=""/>
+          <img src="/Img/Mainimg.svg" alt=""/>
         </div>
 
         <div className="down-icon">
