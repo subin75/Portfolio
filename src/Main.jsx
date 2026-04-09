@@ -199,7 +199,7 @@ function Main() {
         </p>
 
         <div className="main-image">
-          <img src="/Img/mainimg.svg" />
+          <img src="/Img/mainimg.svg" alt=""/>
         </div>
 
         <div className="down-icon">
@@ -252,7 +252,7 @@ function Main() {
           </div>
 
           <div className="profile-image">
-            <img src="/Img/picture.jpg" />
+            <img src="/Img/picture.jpg" alt=""/>
           </div>
         </div>
       </section>
@@ -317,7 +317,7 @@ function Main() {
             {selectedTab === 'FrontEnd' && (
               <>
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Html.svg" />
+                  <img className="skill-icon" src="/Img/Html.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>HTML5</h3>
                     <p>시멘틱 태그를 활용해 구조화된 웹 페이지를 작성할 수 있으며, 폼 요소, 멀티미디어 태그 등 <br />HTML5의 기본적인 기능을 활용한 경험이 있습니다.</p>
@@ -325,7 +325,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Javascript.svg" />
+                  <img className="skill-icon" src="/Img/Javascript.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Javascript</h3>
                     <p>여러 프로젝트에서 비동기 처리, 조건문 / 삼항 연산자 / 배열 메서드, 이벤트 처리 등을 해봤습니다.</p>
@@ -333,7 +333,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/React.svg" />
+                  <img className="skill-icon" src="/Img/React.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>React</h3>
                     <p>리액트로 여러 프로젝트를 해봤으며, ContextAPI, useState, useEffect를 <br/>활용할 수 있습니다.</p>
@@ -341,7 +341,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Axios.svg" />
+                  <img className="skill-icon" src="/Img/Axios.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Axios</h3>
                     <p>프로젝트 만들 때 데이터 조회와 데이터 삭제하기 위해 사용해 보았습니다.</p>
@@ -349,7 +349,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Css.svg" />
+                  <img className="skill-icon" src="/Img/Css.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>CSS</h3>
                     <p>순수 CSS만을 이용하여 레이아웃을 할 수 있습니다.</p>
@@ -357,7 +357,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Scss.svg" />
+                  <img className="skill-icon" src="/Img/Scss.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>SCSS</h3>
                     <p>순수 scss만을 이용하여 레이아웃을 할 수 있습니다.</p>
@@ -369,7 +369,7 @@ function Main() {
             {selectedTab === 'BackEnd' && (
               <>
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Python.svg" />
+                  <img className="skill-icon" src="/Img/Python.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Python</h3>
                     <p>학창시절 Python을 학습하고, 과제를 통해 기본적인 문법과 제어문, 함수 작성 등을 경험했습니다.</p>
@@ -377,7 +377,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Php.svg" />
+                  <img className="skill-icon" src="/Img/Php.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>PHP</h3>
                     <p>프로젝트에서 PHP를 활용해 비동기 통신과 조건문/배열 메서드를 이용한 데이터 처리 경험이 있습니다.</p>
@@ -385,7 +385,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Kotlin.svg" />
+                  <img className="skill-icon" src="/Img/Kotlin.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Kotlin</h3>
                     <p>졸업작품 프로젝트에서 Kotlin으로 안드로이드 애플리케이션을 개발해보았습니다.</p>
@@ -393,7 +393,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Firebase.svg" />
+                  <img className="skill-icon" src="/Img/Firebase.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Firebase</h3>
                     <p>졸업작품 프로젝트에서 Firebase를 사용해보았습니다.</p>
@@ -401,7 +401,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Mongodb.svg" />
+                  <img className="skill-icon" src="/Img/Mongodb.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>MongoDB</h3>
                     <p>최근 프로젝트를 만들 때 사용해보았습니다.</p>
@@ -413,7 +413,7 @@ function Main() {
             {selectedTab === 'Tools' && (
               <>
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Figma.svg" />
+                  <img className="skill-icon" src="/Img/Figma.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Figma</h3>
                     <p>작업에 들어가기 전, 전체적인 화면 구성과 UI 설계를 위해 Figma를 사용해 디자인 시안을 제작해보았습니다.</p>
@@ -421,7 +421,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Github.svg" />
+                  <img className="skill-icon" src="/Img/Github.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>GitHub</h3>
                     <p>외부 저장과 협업을 위해 사용하였습니다.</p>
@@ -429,7 +429,7 @@ function Main() {
                 </div>
 
                 <div className="skill-item">
-                  <img className="skill-icon" src="/Img/Vercel.svg" />
+                  <img className="skill-icon" src="/Img/Vercel.svg" alt=""/>
                   <div className="skill-text-group">
                     <h3>Vercel</h3>
                     <p>GitHub에 업로드한 프로젝트를 Vercel을 통해 배포한 경험이 있습니다.</p>
