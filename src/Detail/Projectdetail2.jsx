@@ -14,7 +14,7 @@ function Projectdetail2({ onClose }) {
     <div className="project-detail">
       <div className="side-icons">
         <a
-          href="#"
+          href="/"
           onClick={(e) => {
             e.preventDefault();
             onClose();;
