@@ -78,46 +78,6 @@ function Main() {
 
   const projects = [
     {
-      id: 6,
-      title: '포트폴리오',
-      description: '나를 소개하는 포트폴리오 입니다. ',
-      thumbnail: '/Img/sumnail6.svg',
-      githubUrl: 'https://github.com/subin75/Portfolio',
-      tags: ["REACT", "개인","웹", "반응형"]
-    },
-    {
-      id: 3,
-      title: 'Marketon',
-      description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
-      thumbnail: '/Img/sumnail3.svg',
-      githubUrl: 'https://github.com/subin75/Marketon',
-      tags: ["REACT,PHP", "개인","웹","반응형"]
-    },
-    {
-      id: 2,
-      title: 'Jeju',
-      description: '제주 여행을 계획하고 다양한 장소를 탐색할 수 있는 웹사이트, "떠나봅서" 입니다.',
-      thumbnail: '/Img/sumnail2.svg',
-      githubUrl: 'https://github.com/subin75/Jeju',
-      tags: ["REACT, SCSS", "팀","웹","반응형"]
-    },
-    {
-      id: 7,
-      title: 'YFLIX',
-      description: 'Open Api를 활용한 영화정보 제공 프로젝트 입니다.',
-      thumbnail: '/Img/sumnail7.svg',
-      githubUrl: 'https://github.com/subin75/test-movie',
-      tags: ["REACT, CSS", "개인","웹"]
-    },
-    {
-      id: 1,
-      title: '풀무원',
-      description: '풀무원을 리뉴얼한 프로젝트 입니다.',
-      thumbnail: '/Img/sumnail1.svg',
-      githubUrl: 'https://github.com/subin75/Pulmuone',
-      tags: ["HTML, SCSS", "팀","웹","반응형"]
-    },
-    {
       id: 4,
       title: 'StudyLog',
       description: '공부시간을 측정하고 공유하는 앱, "StudyLog" 입니다. ',
@@ -132,15 +92,46 @@ function Main() {
       thumbnail: '/Img/sumnail5.svg',
       githubUrl: 'https://github.com/subin75/University',
       tags: ["KOTLIN, FIREBASE", "팀","앱"]
+    },{
+      id: 1,
+      title: '풀무원',
+      description: '풀무원을 리뉴얼한 프로젝트 입니다.',
+      thumbnail: '/Img/sumnail1.svg',
+      githubUrl: 'https://github.com/subin75/Pulmuone',
+      tags: ["HTML, SCSS", "팀","웹","반응형"]
+    },
+    {
+      id: 7,
+      title: 'YFLIX',
+      description: 'Open Api를 활용한 영화정보 제공 프로젝트 입니다.',
+      thumbnail: '/Img/sumnail7.svg',
+      githubUrl: 'https://github.com/subin75/test-movie',
+      tags: ["REACT, CSS", "개인","웹"]
+    }, 
+    {
+      id: 2,
+      title: 'Jeju',
+      description: '제주 여행을 계획하고 다양한 장소를 탐색할 수 있는 웹사이트, "떠나봅서" 입니다.',
+      thumbnail: '/Img/sumnail2.svg',
+      githubUrl: 'https://github.com/subin75/Jeju',
+      tags: ["REACT, SCSS", "팀","웹","반응형"]
+    },
+    {
+      id: 3,
+      title: 'Marketon',
+      description: '쇼핑몰에서 다양한 상품을 탐색하고 구경할 수 있는 웹사이트, "Marketon" 입니다.',
+      thumbnail: '/Img/sumnail3.svg',
+      githubUrl: 'https://github.com/subin75/Marketon',
+      tags: ["REACT,PHP", "개인","웹","반응형"]
     },
     {
       id: 6,
-      title: '링글 공모전',
-      description: '링글 공모전(기획부문)',
-      thumbnail: '/Img/sumnail5.svg',
-      githubUrl: 'https://github.com/subin75/University',
-      tags: ["기획"]
-    },
+      title: '포트폴리오',
+      description: '나를 소개하는 포트폴리오 입니다. ',
+      thumbnail: '/Img/sumnail6.svg',
+      githubUrl: 'https://github.com/subin75/Portfolio',
+      tags: ["REACT", "개인","웹", "반응형"]
+    }
   ];
 
   const handlePrev = () => {
@@ -208,7 +199,7 @@ function Main() {
           </a>
         </div>
 
-        <div className="main-update">update. 2026.04.05</div>
+        <div className="main-update">update. 2026.04.10</div>
       </section>
 
       <section id="aboutme" className="aboutme-container">
@@ -278,8 +269,9 @@ function Main() {
           <div className="qa-box">
             <h3>Q. 자기개발을 위해 어떤 것들을 해왔는지?</h3>
             <p>
-              개인역량을 향상시키기 위해 6개월간 학원에서 체계적인 교육 과정을 이수하며, 다양한 프로젝트를 통해 실무 감각을 키웠습니다.<br />
-              또한 학습 과정에서 부족하다고 느낀 언어나 지식은 관련 서적과 자료를 참고하며 <span className="b2">꾸준히 보완하고자 노력</span>하고 있습니다.
+              개인역량을 향상시키기 위해 6개월간 학원에서 체계적인 교육 과정을 이수하며, 다양한 프로젝트를 통해 기획부터 개발까지 실무 감각을 키웠습니다.<br />
+              또한 기획공모전 참여를 통해 기존 프로젝트에서는 경험 해본적 없는 <span className="b2">KPI정의와 SWOT분석, MVP기능정의, 유저테스트 등</span>을 해봄으로써 데이터와 사용자 중심으로 문제를 구조화하고 <br />
+              해결하는 역량을 기를 수 있었습니다.
             </p>
           </div>
         </div>
