@@ -3,7 +3,7 @@ import React from 'react'
 function Activity({className}) {
     return (
     <div className={className}>
-        <img src='/Icon/close.svg' style={{ width: '27px', height: '27px' }}/>
+        <img src='/Icon/close.svg' alt=""  style={{ width: '27px', height: '27px' }}/>
     </div>
     )
 }
