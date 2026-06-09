@@ -199,7 +199,7 @@ function Main() {
           </a>
         </div>
 
-        <div className="main-update">update. 2026.04.10</div>
+        <div className="main-update">update. 2026.06.09</div>
       </section>
 
       <section id="aboutme" className="aboutme-container">
